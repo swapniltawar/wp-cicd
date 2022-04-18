@@ -6,11 +6,11 @@ zip -r onxrp.zip themes/onxrp/ -x themes/onxrp/gutenberg/node_modules/**\*
 
 echo "Uploading theme zip file"
 
-scp -i ~/.ssh/mark4-qa-server-cemtrexlabs.pem onxrp.zip ubuntu@13.52.136.49:/home/ubuntu/wordpress/onxrp/wp-content/themes
+scp -i ~/.ssh/mark4-qa-server-cemtrexlabs.pem onxrp.zip ubuntu@13.52.136.49:/home/ubuntu/wordpress/cicd-wordpress/wp-content/themes
 
 ssh -i ~/.ssh/mark4-qa-server-cemtrexlabs.pem ubuntu@13.52.136.49 << EOF
   pwd
-  cd wordpress/onxrp/wp-content/themes
+  cd wordpress/cicd-wordpress/wp-content/themes
   pwd
   ls -alh
   echo "Extracting theme zip file"
