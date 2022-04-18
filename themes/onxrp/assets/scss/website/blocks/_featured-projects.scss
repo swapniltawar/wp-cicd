@@ -1,0 +1,555 @@
+.featured-projects {
+    padding: 40px 0 120px;
+    @include respond-between(md, lg) {
+        padding: 0px 0 56px;
+    }
+    @include respond-below(md) {
+        padding: 0px 0 30px;
+    }
+    @include respond-below(xs) {
+        position: relative;
+        padding: 0;
+    }
+    &--left {
+        max-width: 950px;
+        width: 100%;
+        @include respond-below(md) {
+            width: auto;
+        }
+        @include respond-below(sm) {
+            margin-bottom: 16px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        @include respond-below(xs) {
+            margin-bottom: 0px;
+            width: auto;
+        }
+    }
+    .big-cta {
+
+        @include respond-below(lg){
+            .cta-shape {
+                left: -40px;
+                height: 162px;
+                svg {
+                    width: 108px;
+                    height: 162px;
+                }
+            }
+            .btn.round-primary{
+                @include toRem(font-size, 10);
+                @include toRem(line-height, 16);
+                .btn-shape{
+                    width: 32px;
+                }
+            }
+        }
+        .cta-shape {
+            @include respond-below(md){
+                left: 30px;
+            }
+            @include respond-below(xs){
+                left: 0px;
+            }
+        }
+
+        @include respond-below(xs) {
+            min-height: 190px;
+            position: absolute;
+            right: 78px;
+            bottom: 32px;
+            margin: 0;
+            svg {
+                width: 96px !important;
+                height: 162px !important;
+            }
+            a.btn.round-primary {
+                width: 96px;
+                height: 96px;
+                @include toRem(font-size, 8);
+                position: relative;
+                left: 50px;
+                bottom: 16px;
+                letter-spacing: 0.8px;
+                line-height: 12px;
+                padding: 5px;
+                margin: 0;
+                padding: 20px;
+                .btn-shape {
+                    width: 30px;
+                }
+            }
+            .cta-shape {
+                height: 150px;
+
+            }
+        }
+    }
+    .container {
+        @include respond-below(sm) {
+            flex-direction: column;
+        }
+    }
+}
+
+.featured-projects--tile {
+    max-width: 290px;
+    height: 296px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &:not(:last-child) {
+        margin-right: 40px;
+        @include respond-below(xs) {
+            margin-right: 0px;
+        }
+    }
+    @include respond-between(md, lg) {
+        margin-bottom: 12px;
+        max-width: 204px;
+        margin-right: 20px;
+    }
+    @include respond-below(md) {
+        margin-bottom: 0px;
+        min-width: 208px;
+        margin-right: 24px;
+        &:last-child {
+            margin-right: 0;
+            display: none
+        }
+    }
+    @include respond-below(sm) {
+        &:last-child {
+            display: flex;
+        }
+    }
+    @include respond-below(xs) {
+        height: 168px;
+        min-width: 148px;
+        width: 46%;
+        margin-bottom: 48px;
+    }
+    .heading-five {
+        border-bottom: 1px solid rgba(22, 22, 51, 0.5);
+        padding-bottom: 24px;
+        @include respond-below(lg) {
+            padding-bottom: 16px;
+            @include toRem(font-size, 12);
+            line-height: 1.17;
+         }
+        @include respond-below(md) {
+            padding-bottom: 12px;
+        }
+        @include respond-below(xs) {
+            padding-bottom: 12px;
+            @include toRem(font-size, 10);
+            letter-spacing: 2px;
+            line-height: 12px;
+        }
+    }
+    .tile-shape {
+        width: 162px;
+        height: 242px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 80px;
+        position: absolute;
+        right: 40px;
+        top: 16px;
+        @include respond-between(md, lg) {
+            right: 0px;
+        }
+        @include respond-below(md) {
+            right: 4px;
+            top: 0;
+        }
+
+        @include respond-below(xs) {
+            width: 98px;
+            height: 146px;
+            border-radius: 48px;
+            top: 4px;
+            left: 48px;
+        }
+    }
+    .tile-image {
+        width: 160px;
+        height: 160px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 50%;
+        z-index: 1;
+        position: relative;
+        @include respond-below(xs) {
+            width: 96px;
+            height: 96px;
+        }
+    }
+    .tile-link {
+        position: relative;
+    }
+}
+
+
+.featured-article.feature-podcast{
+    padding-bottom: 80px;
+    margin-bottom: 0;
+    @include respond-below(lg) {
+        @include toRem(padding-bottom, 0);
+    }
+    @include respond-below(md) {
+        @include toRem(padding-bottom, 48);
+    }
+    @include respond-between(sm, md) {
+        .article-title{
+           padding-top: 0;
+        }
+    }
+   .featured-article{
+    &--content{
+        -ms-flex-align: start;
+        align-items: start;
+        .content{
+            padding-top: 91px;
+            width: 100%;
+            @include respond-below(lg) {
+                @include toRem(padding-top, 34);
+            }
+            @include respond-between(sm, md) {
+                @include toRem(padding-top, 48);
+            }
+            @include respond-below(xs) {
+                @include toRem(padding-top, 24);
+            }
+            .content-inner{
+                width: 100%;
+            }
+        }
+
+        .image--oval-shape {
+            @include respond-between(sm, md) {
+                left: 170px;
+            }
+        }
+        .image--wrapper{
+            @include respond-between(sm, md) {
+                margin-left: 0;
+            }
+        }
+      }
+   }
+   .content-para{
+      @include toRem(margin-bottom, 40);
+      @include respond-between(md, lg) {
+        @include toRem(margin-bottom, 40);
+      }
+      @include respond-below(md) {
+        @include toRem(margin-bottom, 48);
+        width: auto;
+      }
+      @include respond-below(xs) {
+        @include toRem(margin-bottom, 24);
+      }
+   }
+   .podcast-action-wrapper{
+    @include respond-between(md, lg) {
+       flex-direction: column;
+    }
+    @include respond-below(xs) {
+        flex-direction: column;
+    }
+    .author-info{
+        flex: 1;
+    }
+    .podcast-action{
+        flex: 1;
+        @include respond-between(md, lg) {
+          @include toRem(margin-top, 40);
+        }
+        @include respond-below(xs) {
+            @include toRem(margin-top, 24);
+        }
+        a{
+         @include toRem(margin-right, 40);
+         //width: auto;
+         @include respond-below(md) {
+            @include toRem(margin-right, 32);
+            width: auto;
+        }
+         @include respond-below(xs) {
+            @include toRem(margin-right, 24);
+            width: 100%;
+            //line-height: inherit;
+            // padding: 12px 0px;
+        }
+         &:last-child{
+             @include toRem(margin-right, 0);
+         }
+        }
+    }
+   }
+}
+
+.news-content,
+.category-xrpl,
+.category-education,
+.page-podcasts,
+.page-education-crypto-101,
+ .podcast-post,
+ .tax-onxrp_podcast_category{
+    .article-column {
+      margin-bottom: 120px;
+      @include respond-below(lg ) {
+        margin-bottom: 56px;
+      }
+      @include respond-below(md ) {
+        margin-bottom: 48px;
+        margin-right: 24px;
+      }
+
+      .article-block{
+        @include respond-between(md, lg) {
+          margin-bottom: 0px;
+         }
+         @include respond-below(md) {
+          margin-bottom: 0;
+        }
+       }
+     }
+     .sub-articles.odd-row, .sub-articles.even-row {
+        .article-block{
+          margin-bottom: 0;
+          @include respond-below(md) {
+            &:nth-child(4n + 2){
+             margin-right: 24px;
+           }
+         }
+        }
+     }
+}
+
+.category-xrpl,
+.category-education,
+.page-podcasts,
+.page-education-crypto-101,
+.podcast-post,
+.tax-onxrp_podcast_category{
+    .featured-article{
+        @include respond-below(lg) {
+            padding-top: 5px;
+        }
+    }
+    .article-block{
+        &:last-child{
+            @include respond-below(lg) {
+               display: block;
+            }
+        }
+        &:first-child{
+            @include respond-below(xs) {
+               margin-left: 0;
+            }
+        }
+        &--devider{
+            @include respond-below(xs) {
+                margin: 24px 0 24px;
+            }
+        }
+        &--image{
+            @include respond-below(xs) {
+                height: 231px;
+            }
+        }
+    }
+    .sub-articles--column{
+        @include respond-below(lg) {
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        @include respond-below(xs) {
+            padding-left: 24px;
+        }
+    }
+    .sub-articles.odd-row, .sub-articles.even-row  {
+        .sub-articles--content{
+            @include respond-below(lg) {
+                margin-bottom: 0;
+            }
+        }
+        .article-block{
+            margin-bottom: 40px;
+            @include respond-between(md, lg){
+                margin-bottom: 56px;
+            }
+            @include respond-below(md) {
+                max-width: 204px;
+                margin-bottom: 48px;
+                &:first-child{
+                    margin-right: 0;
+                }
+            }
+            &:nth-child(4n + 4){
+                @include respond-below(lg) {
+                    margin-left: 24px;
+                }
+                @include respond-below(md) {
+                    margin-left: 0;
+                }
+            }
+            &:nth-child(4n + 2) {
+                @include respond-below(lg) {
+                    margin-left: 24px;
+                    margin-right: 24px;
+                }
+                @include respond-below(md) {
+                    margin-left: 0px;
+                    margin-right: 0px;
+                }
+            }
+            @include respond-below(xs) {
+                max-width: 279px;
+            }
+        }
+    }
+    .category-block.article-block{
+        display: none;
+
+        @include respond-between(sm, lg) {
+            display: block;
+            margin-bottom: 0 !important;
+        }
+    }
+}
+
+.page-podcasts{
+    .featured-article{
+        @include respond-below(md) {
+            @include toRem(margin-bottom, 24);
+         }
+    }
+}
+
+.podcast-post{
+    .featured-article {
+        margin-bottom: 0;
+
+    }
+    .featured-article--content{
+        @include respond-below(md) {
+            margin-bottom: 48px;
+        }
+        .content{
+            .content-para{
+                margin-bottom: 40px;
+                @include respond-below(sm) {
+                    margin-bottom: 24px;
+                }
+            }
+        }
+    }
+    .featured-article.second-option{
+        @include respond-between(sm, md){
+            .article-title{
+                padding-top: 0;
+            }
+        }
+
+        .featured-article--content .content{
+            width: 100%;
+            @include respond-between(md, lg){
+                padding-left: 0;
+            }
+            .image--oval-shape{
+                @include respond-between(md, lg){
+                    right: 0;
+                }
+            }
+        }
+    }
+}
+
+
+.section-podcast-post{
+    .sub-articles--column{
+        @include respond-below(xs) {
+            padding-right: 24px;
+        }
+    }
+    .load-more{
+        margin: 120px 0 80px 0;
+        @include respond-below(lg) {
+            margin: 102px 0 22px 0;
+        }
+        @include respond-below(md) {
+            margin: 48px 0;
+        }
+        @include respond-below(xs) {
+           min-height: 165px;
+        }
+    }
+    .big-cta .cta-shape{
+        height: 238px;
+        @include respond-below(lg) {
+            height: 155px !important;
+        }
+        @include respond-below(xs) {
+            height: 198px !important;
+        }
+    }
+}
+.section-podcast-post.even-row {
+    .big-cta .cta-shape {
+        right: auto;
+        left: 115px;
+        @include respond-below(lg) {
+          left:80px
+         }
+         @include respond-below(xs) {
+            left:auto;
+        }
+    }
+    .big-cta .round-primary{
+        @include respond-below(xs) {
+            margin-left: 40px;
+        }
+        .btn-shape{
+            @include respond-below(xs) {
+                right: 0;
+                left: -20px;
+            }
+        }
+    }
+}
+.section-podcast-post.odd-row{
+    .big-cta {
+        @include respond-below(lg) {
+            margin-left: auto;
+        }
+        .cta-shape {
+            right: 115px;
+            left: auto;
+            @include respond-below(lg) {
+                right: 64px;
+            }
+
+            @include respond-below(xs) {
+                right:auto;
+            }
+        }
+    }
+    .big-cta .round-primary{
+        @include respond-below(md) {
+           margin-left: auto;
+           margin-right: 24px;
+        }
+        @include respond-below(xs) {
+            margin-left: 100px;
+        }
+    }
+}
+
+
+
+

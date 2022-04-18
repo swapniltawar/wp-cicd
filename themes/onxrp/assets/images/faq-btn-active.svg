@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="160px" height="201px" viewBox="0 0 160 201" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 16</title>
+    <defs>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#0C01F4" offset="0%"></stop>
+            <stop stop-color="#9F00B9" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="06_Blog-Detail_FAQ-Expanded" transform="translate(-1165.000000, -4144.000000)">
+            <g id="Group-14" transform="translate(1165.000000, 4145.000000)">
+                <g id="Group-5" transform="translate(80.000000, 100.000000) rotate(90.000000) translate(-80.000000, -100.000000) translate(-20.000000, 20.000000)">
+                    <circle id="Oval-Copy" fill="#0401F6" fill-rule="nonzero" cx="120" cy="80" r="80"></circle>
+                    <g id="Group-10" transform="translate(0.000000, 75.760000)">
+                        <g id="Group-4" transform="translate(20.000000, 4.240000) rotate(90.000000) translate(-20.000000, -4.240000) translate(19.500000, -15.760000)"></g>
+                        <g id="Group-7" stroke="#9F00B9" stroke-linecap="square">
+                            <line x1="1.76635402e-16" y1="4.24264069" x2="4.24264069" y2="0" id="Line-4"></line>
+                            <line x1="1.76635402e-16" y1="8.48528137" x2="4.24264069" y2="4.24264069" id="Line-4" transform="translate(2.121320, 6.363961) scale(1, -1) translate(-2.121320, -6.363961) "></line>
+                        </g>
+                    </g>
+                </g>
+                <circle id="Oval-Copy" stroke="url(#linearGradient-1)" fill-rule="nonzero" transform="translate(80.000000, 60.000000) rotate(90.000000) translate(-80.000000, -60.000000) " cx="80" cy="60" r="40"></circle>
+                <line x1="80" y1="40" x2="80" y2="1.42108547e-13" id="Line-3" stroke="#9F00B9"></line>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="162px" height="201px" viewBox="0 0 162 201" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 5</title>
+    <defs>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#0C01F4" offset="0%"></stop>
+            <stop stop-color="#9F00B9" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="05_Blog-Detail" transform="translate(-1164.000000, -4145.000000)">
+            <g id="Group-5" transform="translate(1245.000000, 4245.000000) rotate(90.000000) translate(-1245.000000, -4245.000000) translate(1145.000000, 4165.000000)">
+                <circle id="Oval" fill="#0401F6" cx="40" cy="80" r="40"></circle>
+                <circle id="Oval-Copy" stroke="url(#linearGradient-1)" fill-rule="nonzero" cx="100" cy="80" r="80"></circle>
+                <g id="Group-10-Copy" transform="translate(180.000000, 80.002641) scale(-1, 1) translate(-180.000000, -80.002641) translate(160.000000, 75.760000)" stroke="#0401F6">
+                    <g id="Group-4" transform="translate(20.000000, 4.240000) rotate(90.000000) translate(-20.000000, -4.240000) translate(19.500000, -15.760000)">
+                        <line x1="0.5" y1="40" x2="0.5" y2="1.42108547e-13" id="Line-3"></line>
+                    </g>
+                    <g id="Group-7" stroke-linecap="square">
+                        <line x1="1.76635402e-16" y1="4.24264069" x2="4.24264069" y2="0" id="Line-4"></line>
+                        <line x1="1.76635402e-16" y1="8.48528137" x2="4.24264069" y2="4.24264069" id="Line-4" transform="translate(2.121320, 6.363961) scale(1, -1) translate(-2.121320, -6.363961) "></line>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,7 @@
+wordpress-seo
+contact-form-7
+feedzy-rss-feeds
+google-sitemap-generator
+redirection
+wp-fastest-cache
+wp-mail-smtp

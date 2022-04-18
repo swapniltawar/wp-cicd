@@ -1,0 +1,22 @@
+.become-contributor {
+  &__title {
+    @include toRem(padding-bottom, 80);
+    border-bottom: 1px solid var(--xrp-darker-gray);
+  }
+  .details-body {
+    article.article {
+      &:not(:last-of-type) {
+        @include toRem(padding-bottom, 80);
+      }
+    }
+  }
+  .form-wrapper {
+    @include toRem(margin-top, 40);
+    form {
+      @include toRem(margin-top, 40);
+    }
+  }
+  .details-body {
+    @include toRem(padding-bottom, 120);
+  }
+}

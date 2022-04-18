@@ -1,0 +1,27 @@
+# Uploads directory
+/uploads/
+
+# drop-ins; these are managed at the platform-level
+/object-cache.php
+/db.php
+
+# Ignore temporary OS files
+.DS_Store
+.DS_Store?
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+.directory
+yarn.lock
+package-lock.json
+
+node_modules/
+vendor/
+wp/*
+sniffs/*
+/themes/onxrp/dist/*
+yarn-error.log
+
+!plugins/*/vendor

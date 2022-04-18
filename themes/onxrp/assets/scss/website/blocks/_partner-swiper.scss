@@ -1,0 +1,198 @@
+.partner-slider {
+    margin-bottom: 85px;
+    margin-top: 40px;
+    @include respond-between(md, lg) {
+        margin-bottom: 56px;
+    }
+    @include respond-below(md) {
+        margin-bottom: 48px;
+    }
+
+    &--container {
+        display: flex;
+        @include respond-below(sm) {
+            flex-direction: column;
+        }
+        @include respond-below(xs) {
+            align-items: flex-end;
+        }
+    }
+
+    &--swiper {
+        max-width: 950px;
+        margin-left: 0px;
+        @include respond-below(md) {
+            padding-right: 20px;
+         }
+        @include respond-below(sm) {
+            max-width: 100%;
+         }
+    }
+    .featured-projects--tile{
+        &:last-child{
+            @include respond-below(md) {
+               display: flex;
+            }
+        }
+    }
+    .swiper-buttons {
+        max-width: 220px;
+        width: 100%;
+        margin-right: 35px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        @include respond-between(md, lg) {
+            margin-right: 0px;
+            margin-left: 35px;
+            min-width: 242px;
+        }
+        @include respond-below(md) {
+            min-width: 238px;
+           margin-right: 0;
+           padding-left: 16px;
+        }
+        @include respond-below(sm) {
+            max-width: 100%;
+            margin: 0;
+            flex-direction: row-reverse;
+            align-items: center;
+        }
+        .next-prev {
+            width: 100%;
+            height: 160px;
+            background: url("../../images/pagination-circle.svg") no-repeat top center;
+            background-size: contain;
+            position: relative;
+
+            @include respond-below(lg) {
+                height: 112px;
+                max-width: 225px;
+                right: 0px;
+                position: relative;
+            }
+            @include respond-below(xs) {
+                max-width: 197px;
+            }
+        }
+        .pagination {
+            position: relative;
+            width: 100%;
+            height: 20px;
+            @include respond-below(md) {
+                width: 120px;
+            }
+            .swiper-pagination-bullets {
+                bottom: 0;
+                @include respond-between(sm, md) {
+                    text-align:right;
+                    min-width: 136px;
+                 }
+                @include respond-below(sm) {
+                   text-align:left;
+                }
+            }
+        }
+        .swiper-pagination-bullet {
+            background-color: var(--xrp-darker-gray);
+            margin: 0 6px;
+        }
+        .swiper-pagination-bullet-active {
+            background-color: var(--xrp-primary-blue);
+        }
+        .swiper-button-next{
+            @include respond-between(md, lg) {
+                right: 16px;
+            }
+        }
+        .swiper-button-next,
+        .swiper-rtl .swiper-button-prev {
+            width: 40px;
+
+             @include respond-between(md, lg) {
+                right: 16px;
+            }
+            @include respond-below(xs) {
+                right: 16px;
+             }
+            span {
+                position: absolute;
+                @include Font-Kallisto-Heavy;
+                @include toRem(font-size,
+                14);
+                @include toRem(line-height,
+                20);
+                @include toRem(letter-spacing,
+                2);
+                color: var(--xrp-primary-blue);
+                text-transform: uppercase;
+                text-decoration: underline;
+                right: 50px;
+                @include respond-below(lg) {
+                    @include toRem(font-size, 10);
+                    @include toRem(line-height, 12);
+                    right: 60px;
+                }
+                // @include respond-below(md) {
+                //     right: 65px;
+                // }
+
+
+                @include respond-below(xs) {
+                    @include toRem(font-size, 8);
+                    line-height: 13.7px;
+                    right: 42px;
+                    letter-spacing: 1.14px;
+                }
+            }
+        }
+        .swiper-button-prev,
+        .swiper-rtl .swiper-button-next {
+            width: 40px;
+            left: 0;
+            @include respond-between(md, lg) {
+                left: -15px;
+            }
+            .prev-circle {
+                width: 80px;
+                height: 80px;
+                background: var(--xrp-primary-blue);
+                border-radius: 50%;
+                position: absolute;
+                left: 20px;
+                @include respond-below(md) {
+                   left: 28px;
+                }
+            }
+        }
+        .swiper-button-next:after,
+        .swiper-rtl .swiper-button-prev:after {
+            background: url("../../images/swiper-next-arrow.svg") no-repeat top center;
+            content: "";
+            height: 12px;
+            width: 40px;
+            @include respond-below(xs) {
+               background-size: 24px;
+               height: 6px;
+            }
+        }
+        .swiper-button-prev:after,
+        .swiper-rtl .swiper-button-next:after {
+            background: url("../../images/swiper-prev-arrow.svg") no-repeat top center;
+            content: "";
+            height: 12px;
+            width: 40px;
+            background-position: 0;
+            z-index: 1;
+            @include respond-below(xs) {
+                background-size: 24px;
+            }
+        }
+    }
+    .article-title{
+        @include toRem(margin-bottom, 40);
+        @include respond-below(lg) {
+          @include toRem(margin-bottom, 25);
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "breadcrumbs.enabled": true,
+    "editor.renderWhitespace": "all",
+    "editor.wordSeparators": "`~!@#%^&*()-=+[{]}\\|;:'\",.<>/?",
+    "emmet.triggerExpansionOnTab": true,
+    "files.associations": {
+        ".php-cs": "php"
+    },
+    "files.exclude": {
+      "**/.git": true,
+      "**/.svn": true,
+      "**/.hg": true,
+      "**/CVS": true,
+      "**/.DS_Store": true
+    },
+    "files.trimTrailingWhitespace": true,
+    "php-cs-fixer.config": ".php-cs",
+    "php-cs-fixer.executablePath": "/usr/local/bin/php-cs-fixer",
+    "php-cs-fixer.formatHtml": true,
+    "php.suggest.basic": false,
+    "phpcs.standard": "WordPress",
+    "workbench.editor.enablePreview": false,
+    "git.ignoreLimitWarning": true
+}

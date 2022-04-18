@@ -1,0 +1,144 @@
+@import url("https://use.typekit.net/dyi3oso.css");
+@mixin Font-Kallisto {
+    font-family: kallisto, sans-serif;
+    font-style: normal;
+}
+
+@mixin Font-Kallisto-Medium {
+    font-family: kallisto, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+}
+
+@mixin Font-Kallisto-Heavy {
+    font-family: kallisto, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+}
+
+@mixin Font-Kallisto-Bold {
+    font-family: kallisto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+}
+
+@mixin Font-Kallisto-Lined {
+    font-family: Kallisto-Lined;
+    font-size: 72px;
+    line-height: 80px;
+    text-transform: uppercase;
+}
+
+body {
+    @include Font-Kallisto;
+}
+
+.lined-title {
+    @include Font-Kallisto-Lined;
+    @media only screen and (max-width: 1024px) {
+        @include toRem(font-size, 40);
+        @include toRem(line-height,
+        48);
+    }
+    @media only screen and (max-width: 991px) {
+        @include toRem(font-size,
+        32);
+        @include toRem(line-height,
+        40);
+    }
+}
+
+h1,
+.heading-one {
+    @include Font-Kallisto-Bold;
+    @include toRem(font-size,
+    44);
+    @include toRem(line-height,
+    56);
+    color: var(--xrp-darker-gray);
+    @media only screen and (max-width: 1024px) {
+        @include toRem(font-size, 36);
+        @include toRem(line-height,
+        42);
+    }
+    @media only screen and (max-width: 991px) {
+        @include toRem(font-size,
+        32);
+        @include toRem(line-height,
+        40);
+    }
+}
+
+h2,
+.heading-two {
+    @include Font-Kallisto-Bold;
+    @include toRem(font-size,
+    48);
+    @include toRem(line-height,
+    56);
+    color: var(--xrp-dark-gray);
+    @media only screen and (max-width: 1024px) {
+        @include toRem(font-size, 32);
+        @include toRem(line-height,
+        40);
+    }
+    @include respond-below(xs) {
+        @include toRem(font-size,
+        18);
+        @include toRem(line-height,
+        26);
+    }
+}
+
+h3,
+.heading-three {
+    @include Font-Kallisto-Bold;
+    @include toRem(font-size,
+    24);
+    @include toRem(line-height,
+    32);
+    color: var(--xrp-darker-gray);
+    @media only screen and (max-width: 1024px) {
+        @include toRem(font-size, 18);
+        @include toRem(line-height,
+        24);
+    }
+    @media only screen and (max-width: 991px) {
+        @include toRem(font-size,
+        18);
+        @include toRem(line-height,
+        26);
+    }
+}
+
+p,
+.content-para {
+    @include Font-Kallisto-Medium;
+    @include toRem(font-size,
+    16);
+    @include toRem(line-height,
+    28);
+    @include respond-below(xs) {
+        @include toRem(font-size,
+        14);
+        @include toRem(line-height,
+        24);
+    }
+}
+
+h5,
+.heading-five {
+    font-weight: 900;
+    text-transform: uppercase;
+    @include toRem(font-size,
+    14);
+    @include toRem(line-height,
+    16);
+    @include toRem(letter-spacing,
+    1);
+    color: var(--xrp-dark-gray);
+    @include respond-below(xs) {
+        @include toRem(font-size,
+        10);
+    }
+}

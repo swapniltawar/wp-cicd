@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="41px" height="10px" viewBox="0 0 41 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 10 Copy</title>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="02_About" transform="translate(-1285.000000, -1811.000000)" stroke="#0401F6">
+            <g id="Group-5" transform="translate(1105.000000, 1736.000000)">
+                <g id="Group-10-Copy" transform="translate(200.000000, 80.002641) scale(-1, 1) translate(-200.000000, -80.002641) translate(180.000000, 75.760000)">
+                    <g id="Group-4" transform="translate(20.000000, 4.240000) rotate(90.000000) translate(-20.000000, -4.240000) translate(19.500000, -15.760000)">
+                        <line x1="0.5" y1="40" x2="0.5" y2="1.42108547e-13" id="Line-3"></line>
+                    </g>
+                    <g id="Group-7" stroke-linecap="square">
+                        <line x1="1.76635402e-16" y1="4.24264069" x2="4.24264069" y2="0" id="Line-4"></line>
+                        <line x1="1.76635402e-16" y1="8.48528137" x2="4.24264069" y2="4.24264069" id="Line-4" transform="translate(2.121320, 6.363961) scale(1, -1) translate(-2.121320, -6.363961) "></line>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

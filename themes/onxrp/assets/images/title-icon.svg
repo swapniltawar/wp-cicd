@@ -1,0 +1,18 @@
+<svg width="25" height="16" viewBox="0 0 25 16" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient x1="-.001%" y1="49.998%" x2="100.001%" y2="49.998%" id="ableoobtla">
+            <stop stop-color="#0301F7" offset="0%"/>
+            <stop stop-color="#2301EA" offset="13%"/>
+            <stop stop-color="#5001D8" offset="33%"/>
+            <stop stop-color="#7300CA" offset="52%"/>
+            <stop stop-color="#8C00C0" offset="70%"/>
+            <stop stop-color="#9C00BA" offset="87%"/>
+            <stop stop-color="#A100B8" offset="100%"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <circle fill="url(#ableoobtla)" fill-rule="nonzero" cx="8" cy="8" r="8"/>
+        <path stroke="#A100B8" stroke-linecap="square" d="M8 8.5h16"/>
+        <path stroke="#EEE" stroke-linecap="square" d="M8 8.5h8"/>
+    </g>
+</svg>

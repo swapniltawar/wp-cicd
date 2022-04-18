@@ -1,0 +1,24 @@
+//-----------------------------------------------------------------
+// Color Palette
+//-----------------------------------------------------------------
+:root {
+  --xrp-body-bg: #eeeeee;
+  --xrp-white: #ffffff;
+  --xrp-black: #000000;
+  --xrp-dark-gray: #171733;
+  --xrp-darker-gray: #161632;
+  --xrp-darker-gray-2: #161534;
+  --xrp-primary-blue: #0401f6;
+  --xrp-danger-red: #b80058;
+  --xrp-border-color: rgba(22, 22, 50, 0.5);
+  --xrp-primary-gradient: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(4, 1, 246, 1) 50%,
+    rgba(4, 1, 246, 1) 100%
+  );
+  --xrp-image-overlay: linear-gradient(90deg, rgba(3, 1, 247, 1) 0%, rgba(161, 0, 184, 1) 100%);
+  --xrp-barney-purple: #a100b8;
+  --xrp-silver: #c2c2c8;
+}

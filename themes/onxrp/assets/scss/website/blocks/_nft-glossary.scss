@@ -1,0 +1,174 @@
+.nft-glossary {
+  &__title {
+    @include toRem(margin-bottom, 80);
+    @include toRem(margin-top, 41);
+    @include respond-below(md) {
+      @include toRem(margin-bottom, 24);
+      @include toRem(margin-top, 4);
+    }
+  }
+  .volatility {
+    display: flex;
+    justify-content: space-between;
+    @include toRem(margin-bottom, 80);
+    @include respond-below(lg) {
+      @include toRem(margin-bottom, 56);
+    }
+    @include respond-below(md) {
+      @include toRem(margin-bottom, 48);
+    }
+    @include respond-below(sm) {
+      flex-direction: column;
+      @include toRem(padding-right, 20);
+      @include toRem(margin-bottom, 24);
+    }
+    .lhs {
+      @include toRem(max-width, 560);
+
+      .heading-one {
+        display: block;
+        margin: 24px 0 16px;
+        @include respond-below(sm) {
+          margin: 24px 0 12px;
+        }
+      }
+    }
+    .content-para {
+      &:not(:last-of-type) {
+        @include toRem(margin-bottom, 40);
+        @include respond-below(xs) {
+          @include toRem(margin-bottom, 24);
+        }
+      }
+      > a {
+        display: table;
+        @include toRem(margin-top, 24);
+      }
+      .read-more-link {
+        margin-top: 24px;
+        @include respond-below(sm) {
+          @include toRem(margin-bottom, 48);
+        }
+        a{
+          @include toRem(font-size, 12);
+          @include toRem(line-height, 16);
+          letter-spacing:normal;
+          color: var(--xrp-primary-blue);
+          text-decoration: underline;
+          font-weight: bold;
+          text-transform: uppercase;
+          @include respond-below(xs) {
+            @include toRem(font-size, 10);
+            @include toRem(line-height, 14);
+          }
+        }
+      }
+    }
+    .read-more-wrapper {
+      @include toRem(margin-top, 40);
+      // li:not(:last-child) {
+      //   @include toRem(margin-bottom, 16);
+      // }
+      @include respond-below(xs) {
+        @include toRem(margin-top, 0);
+      }
+      a{
+        @include toRem(font-size, 12);
+        @include toRem(line-height, 32);
+        letter-spacing: 1px;
+        color: var(--xrp-primary-blue);
+        text-decoration: underline;
+        font-weight: bold;
+      }
+    }
+  }
+  // NFT glossary terms page
+  &--terms {
+    h1 {
+      @include toRem(margin-bottom, 40);
+      @include toRem(margin-top, 41);
+      @include toRem(padding-bottom, 40);
+      border-bottom: 1px solid var(--xrp-darker-gray);
+      @include respond-below(xs) {
+        @include toRem(margin-top, 14);
+        @include toRem(padding-bottom, 24);
+        @include toRem(line-height, 32);
+        @include toRem(padding-bottom, 24);
+      }
+    }
+    .sorting {
+      // @include respond-below(xs) {
+      //   @include toRem(padding-right, 20);
+      // }
+      .result {
+        @include toRem(margin-top, 40);
+        @include respond-below(md) {
+          @include toRem(margin-top, 0);
+        }
+      }
+    }
+  }
+}
+
+.single-glossary {
+  .details-page .details-body{
+    .rhs{
+        #new_nft_glossary_widget-2 h2{
+          @include toRem(line-height, 0);
+          @include toRem(font-size,16);
+          @include respond-below(xs) {
+            margin-bottom: 24px;
+          }
+        }
+
+    }
+    article.article p:not(:last-of-type){
+      @include toRem(margin-bottom, 24);
+    }
+    .rhs__block{
+       p{
+        @include respond-below(xs) {
+          margin-top: 12px;
+          font-size: 14px;
+          line-height: 24px;
+          margin-bottom: 18px;
+        }
+      }
+      a.read-more-link{
+        @include respond-below(xs) {
+          font-size: 10px;
+          line-height: 14px;
+        }
+      }
+    }
+  }
+  article.article--hero{
+    @include respond-above(md) {
+      margin-bottom: 40px !important;
+    }
+    border-bottom: 1px solid var(--xrp-darker-gray);
+    .article__body{
+      margin-bottom: 40px;
+    }
+  }
+  .details-page .related-articles-wrapper .related-articles{
+    @include respond-above(md) {
+      @include toRem(padding-bottom, 40);
+      }
+  }
+  #what_is_a_stablecoin{
+    border-bottom: 1px solid var(--xrp-darker-gray);
+    @include toRem(padding-bottom, 40);
+  }
+
+}
+@include respond-below(xs) {
+  .page-nft-glossary-terms{
+    .nft-glossary--terms{
+      h1{
+        margin-bottom: 24px;
+        margin-top: 0;
+      }
+    }
+  }
+}

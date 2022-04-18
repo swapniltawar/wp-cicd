@@ -1,0 +1,60 @@
+version: "3.3"
+
+services:
+  nginx:
+    depends_on:
+      - php
+    build: ./docker/nginx/
+    container_name: onxrp-nginx
+    ports:
+      - 4000:80
+    volumes:
+      - ${PWD}/wp:/var/www/html
+      - ${PWD}/themes:/var/www/html/wp-content/themes
+      - ${PWD}/plugins:/var/www/html/wp-content/plugins
+      - ${PWD}/docker/php/dbadmin.php:/var/www/html/dbadmin.php
+      - ${PWD}/docker/php/setup.sh:/setup.sh
+
+  mysql:
+    image: mysql:5.7
+    container_name: onxrp-mysql
+    volumes:
+      - ${HOME}/docker/onxrp:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: admin
+      MYSQL_DATABASE: onxrp
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: admin
+
+  php:
+    depends_on:
+      - mysql
+    build: ./docker/php/
+    container_name: onxrp-php
+    volumes:
+      - ${PWD}/wp:/var/www/html
+      - ${PWD}/themes/onxrp:/var/www/html/wp-content/themes/onxrp
+      - ${PWD}/plugins:/var/www/html/wp-content/plugins
+      - ${PWD}/docker/php/dbadmin.php:/var/www/html/dbadmin.php
+      - ${PWD}/docker/php/setup.sh:/setup.sh
+
+    expose:
+      - 9000
+    restart: always
+    environment:
+      WORDPRESS_DB_HOST: mysql:3306
+      WORDPRESS_DB_USER: admin
+      WORDPRESS_DB_PASSWORD: admin
+      WORDPRESS_DB_NAME: onxrp
+
+volumes:
+  db_data: {}
+  wp: {}
+
+networks:
+  default:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 198.16.57.0/24

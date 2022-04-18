@@ -1,0 +1,138 @@
+
+  .legal-info {
+    &__title{
+      @include toRem(margin-bottom, 80);
+      @include toRem(max-width, 620);
+      @media only screen and (max-width: 1024px) {
+        @include toRem(margin-bottom, 40);
+      }
+      @include respond-below(xs) {
+        @include toRem(margin-bottom, 24);
+      }
+    }
+    .details-body {
+      margin-top: 0;
+      grid-template-columns: 100%;
+      @include toRem(padding-top, 40);
+      @include toRem(padding-bottom, 120);
+      border-top: 1px solid var(--xrp-darker-gray);
+      grid-row-gap: 0px;
+      @include respond-below(lg) {
+      @include toRem(padding-bottom, 56);
+        grid-row-gap: 40px;
+      }
+      @include respond-below(md) {
+        @include toRem(padding-bottom, 48);
+        grid-row-gap: 0px;
+      }
+
+      h2.heading-two {
+        @include toRem(font-size, 32);
+        @include toRem(line-height, 40);
+      }
+      article.article .article__body {
+        @include toRem(max-width, 950);
+      }
+    }
+  }
+
+.page-privacy-policy,
+.page-terms-conditions,
+.page-onxrp-nft-coin-listingrequirements{
+  .entry-content{
+    .container{
+      border-top:1px solid var(--xrp-border-color);
+      @include toRem(padding-top, 48);
+      @include toRem(padding-bottom, 120);
+      @include respond-below(lg) {
+        @include toRem(padding-bottom, 56);
+      }
+      @include respond-below(md) {
+        @include toRem(padding-bottom, 48);
+        @include toRem(padding-top, 24);
+      }
+    }
+
+    h2 {
+      @include toRem(margin-bottom, 24);
+      @include toRem(max-width, 620);
+      @include toRem(font-size, 32);
+      @include toRem(line-height, 40);
+      @media only screen and (max-width: 1024px) {
+        @include toRem(margin-bottom, 40);
+      }
+      @include respond-below(md) {
+        @include toRem(margin-bottom, 24);
+      }
+      @include respond-below(xs) {
+        @include toRem(margin-bottom, 16);
+      }
+    }
+    p {
+      @include toRem(max-width, 950);
+      @include toRem(font-size, 16);
+      @include toRem(line-height, 28);
+      margin-left: auto;
+      &:not(:last-of-type) {
+        margin-bottom: 1.5rem;
+        @include respond-below(md) {
+          @include toRem(margin-bottom, 24);
+        }
+        @include respond-below(xs) {
+          @include toRem(margin-bottom, 16);
+        }
+      }
+      @include respond-between(md, lg) {
+        @include toRem(max-width, 650);
+      }
+      @include respond-below(md) {
+        max-width: 100%;
+        margin-left: 0;
+      }
+
+    }
+    .para-content-heading{
+      @include toRem(margin-bottom, 40);
+      @include respond-below(md) {
+        @include toRem(margin-bottom, 24);
+      }
+      p{
+        font-weight: bold;
+      }
+    }
+
+    ul{
+      @include toRem(margin-bottom, 40);
+      @include toRem(max-width, 950);
+      @include toRem(padding-left, 15);
+      margin-left: auto;
+      @include respond-between(md, lg) {
+        @include toRem(max-width, 650);
+      }
+      @include respond-below(md) {
+        @include toRem(margin-bottom, 24);
+      }
+      @include respond-below(xs) {
+        @include toRem(margin-bottom, 24);
+      }
+      li{
+        @include toRem(font-size, 16);
+        @include toRem(line-height, 28);
+        list-style-type: disc;
+      }
+    }
+    .wp-block-separator{
+      background: var(--xrp-border-color);
+      height: 1px;
+      width: 100%;
+      border:0 none;
+      @include toRem(margin-bottom, 40);
+      @include respond-below(md) {
+        @include toRem(margin-bottom, 24);
+      }
+      @include respond-below(xs) {
+        @include toRem(margin-bottom, 24);
+      }
+    }
+  }
+}
